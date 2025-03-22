@@ -1,4 +1,3 @@
-
 import streamlit as st
 import os
 import torch
@@ -14,34 +13,31 @@ st.title("Chest X-Ray Pneumonia Detection")
 st.write("##### Upload a chest X-ray image in (PNG, JPG, or JPEG) fromat and the AI-Powered model will predict if person has pneumonia or not")
 
 
-# 1. Model Path
-MODEL_PATH = "your path/best_pneumonia_model.pth"
+# Get model path from Streamlit secrets; if not present, show an error and stop.
+if "model_path" not in st.secrets:
+    st.error("Model path not found in secrets. Please add a model_path in .streamlit/secrets.toml")
+    st.stop()
+
+MODEL_PATH = st.secrets["model_path"]
 
 @st.cache_resource
 def load_model(model_path: str):
-    """Load the DenseNet model from TorchXRayVision with a custom classifier."""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # Load DenseNet121 model from TorchXrayVision
     model = xrv.models.DenseNet(weights="densenet121-res224-all")
-    model.op_threshs = None
-    # Classifier with dropout, exactly as used during training
+    model.op_threshs = None  # Remove multi-label thresholds
+    # Use the same classifier architecture as during training (with dropout)
     model.classifier = nn.Sequential(
         nn.Dropout(0.5),
         nn.Linear(model.classifier.in_features, 1)
     )
+    # Load the saved model weights
     model.load_state_dict(torch.load(model_path, map_location=device))
     model.to(device)
     model.eval()
     return model
 
-# Load the model, or show an error if not found
-try:
-    model = load_model(MODEL_PATH)
-except FileNotFoundError:
-    st.error(
-        f"**Model file not found:**\n\n`{MODEL_PATH}`\n\n"
-        "Please verify that the file path is correct."
-    )
-    st.stop()
+model = load_model(MODEL_PATH)
 
 # 2. Preprocessing Transform (same as training normalization)
 transform = transforms.Compose([
