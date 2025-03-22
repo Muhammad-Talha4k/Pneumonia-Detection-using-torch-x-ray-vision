@@ -32,10 +32,13 @@ Below are sample images from the dataset, showing **Normal** and **Pneumonia** .
 
 ## Project Structure
 ```
+├── images
+ └── normal & pneumonia images
 ├── README.md
 ├── app.py
 ├── pneumonia_detection.ipynb
 ├── best_pneumonia_model.pth
+├── Demo.mp4
 └── requirements.txt
 ```
 
