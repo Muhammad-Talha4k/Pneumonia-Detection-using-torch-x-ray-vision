@@ -6,19 +6,26 @@ This project is a deep learning application that predicts whether a chest X-ray 
 
 ## Live App
 
-- Check out the deployed app here: [Pneumonia Detection Live App](https://streamlit.app/)
+- Check out the deployed app here: [Pneumonia Detection Live App](https://pneumonia-detection-using-torch.streamlit.app/)
 
- ## Sample Chest X-Ray Images from Train Dataset
+## Demo Video
 
-Below are sample images from the dataset, showing **Normal** and **Pneumonia** examples side by side.
+<video width="700" controls>
+  <source src="https://github.com/Muhammad-Talha4k/Pneumonia-Detection-using-torch-xray-vision/main/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+ ## Sample Chest X-Ray Images from Dataset
+
+Below are sample images from the dataset, showing **Normal** and **Pneumonia** .
 
 | Normal | Normal | Normal | Normal | Normal |
 |:-----:|:------:|:------:|:------:|:------:|
-| ![Normal](normal1.PNG) | ![Normal](normal2.PNG) | ![Normal](normal3.PNG) | ![Normal](normal4.PNG) | ![Normal](normal5.PNG) |
+| ![Normal](images/normal1.PNG) | ![Normal](images/normal2.PNG) | ![Normal](images/normal3.PNG) | ![Normal](images/normal4.PNG) | ![Normal](images/normal5.PNG) |
 
 | Pneumonia | Pneumonia | Pneumonia | Pneumonia | Pneumonia |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
-| ![Pneumonia](pneumonia1.PNG) | ![Pneumonia](pneumonia2.PNG) | ![Pneumonia](pneumonia3.PNG) | ![Pneumonia](pneumonia4.PNG) | ![Pneumonia](pneumonia5.PNG) |
+| ![Pneumonia](images/pneumonia1.PNG) | ![Pneumonia](images/pneumonia2.PNG) | ![Pneumonia](images/pneumonia3.PNG) | ![Pneumonia](images/pneumonia4.PNG) | ![Pneumonia](images/pneumonia5.PNG) |
 
 ## Features
 
