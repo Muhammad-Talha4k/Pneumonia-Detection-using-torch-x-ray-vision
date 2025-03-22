@@ -8,12 +8,8 @@ This project is a deep learning application that predicts whether a chest X-ray 
 
 - Check out the deployed app here: [Pneumonia Detection Live App](https://pneumonia-detection-using-torch.streamlit.app/)
 
-## Demo Video
-
-<video width="700" controls>
-  <source src="https://github.com/Muhammad-Talha4k/Pneumonia-Detection-using-torch-xray-vision/main/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## App Demo 
+https://github.com/user-attachments/assets/032453a9-5da7-49b1-a161-00fda5d32f00
 
  ## Sample Chest X-Ray Images from Dataset
 
