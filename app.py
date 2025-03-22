@@ -16,8 +16,6 @@ st.write("##### Upload a chest X-ray image in (PNG, JPG, or JPEG) fromat and the
 # -------------------------------
 # Model Path Setup from Secrets
 # -------------------------------
-# In your .streamlit/secrets.toml, add:
-# model_path = "https://raw.githubusercontent.com/Muhammad-Talha4k/Pneumonia-Detection-using-torch-xray-vision/main/best_pneumonia_model.pth"
 if "model_path" in st.secrets:
     model_path_secret = st.secrets["model_path"]
 else:
