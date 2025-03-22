@@ -14,11 +14,11 @@ Below are sample images from the dataset, showing **Normal** and **Pneumonia** e
 
 | Normal | Normal | Normal | Normal | Normal |
 |:-----:|:------:|:------:|:------:|:------:|
-| ![Normal 1](images/normal1.png) | ![Normal 2](images/normal2.png) | ![Normal 3](images/normal3.png) | ![Normal 4](images/normal4.png) | ![Normal 5](images/normal5.png) |
+| ![Normal](normal1.PNG) | ![Normal](normal2.PNG) | ![Normal](normal3.PNG) | ![Normal](normal4.PNG) | ![Normal](normal5.PNG) |
 
 | Pneumonia | Pneumonia | Pneumonia | Pneumonia | Pneumonia |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
-| ![Pneumonia 1](images/pneumonia1.png) | ![Pneumonia 2](images/pneumonia2.png) | ![Pneumonia 3](images/pneumonia3.png) | ![Pneumonia 4](images/pneumonia4.png) | ![Pneumonia 5](images/pneumonia5.png) |
+| ![Pneumonia](pneumonia1.PNG) | ![Pneumonia](pneumonia2.PNG) | ![Pneumonia](pneumonia3.PNG) | ![Pneumonia](pneumonia4.PNG) | ![Pneumonia](pneumonia5.PNG) |
 
 ## Features
 
@@ -76,7 +76,7 @@ Once the app is running, you can:
 
 - Upload a Chest X-ray: Upload your chest X-ray image (PNG/JPG/JPEG)
 - The model will classify the image as Normal or Pneumonia.
--View Results: The app displays the uploaded image along with a zoomed-in version.
+- The app displays the uploaded image along with a zoomed-in version.
 - A clear label (NORMAL or PNEUMONIA) is shown based on the prediction.
 
 ## Contributing
@@ -90,4 +90,6 @@ This project is licensed under the MIT License.
 
 **TorchXRayVision**: This project uses the DenseNet model implementation from [TorchXRayVision](https://github.com/mlmed/torchxrayvision), which provides state-of-the-art pretrained models for chest X-ray analysis.
 
-**Kaggle Pneumonia Dataset**: The pneumonia dataset used for fine-tuning was sourced from [Kaggle’s chest X-ray pneumonia dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). Special thanks to the contributors of this dataset.
+**Kaggle Pneumonia Dataset**: The pneumonia dataset used for fine-tuning was sourced from [Kaggle’s chest X-ray pneumonia dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). 
+
+Special thanks to the contributors of the Torch XRAY-Vision library and kaggle for the dataset.
