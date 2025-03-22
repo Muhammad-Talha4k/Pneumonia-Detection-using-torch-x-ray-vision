@@ -14,8 +14,8 @@ st.title("Chest X-Ray Pneumonia Detection")
 st.write("##### Upload a chest X-ray image in (PNG, JPG, or JPEG) fromat and the AI-Powered model will predict if person has pneumonia or not")
 
 
-# 1. Hard-coded Model Path
-MODEL_PATH = "D:/Talha_Folder/py-learning/best_pneumonia_model.pth"
+# 1. Model Path
+MODEL_PATH = "your path/best_pneumonia_model.pth"
 
 @st.cache_resource
 def load_model(model_path: str):
@@ -78,8 +78,7 @@ if uploaded_file is not None:
         st.image(image, caption="Uploaded Chest X-Ray image", width=400)
 
     with colSpace:
-        # Just an empty column to create spacing
-        st.write("")  # or pass
+        st.write("")  
 
     with colB:
         st.image(image_denorm, caption="Zoomed-in Chest X-Ray Image", width=400)
