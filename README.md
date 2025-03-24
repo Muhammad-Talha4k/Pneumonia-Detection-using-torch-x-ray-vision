@@ -1,8 +1,7 @@
 # Chest X-Ray Pneumonia Detection App
 
 ## Overview
-
-This project is a deep learning application that predicts whether a chest X-ray indicates **pneumonia** or is **normal**. It leverages a **pretrained DenseNet** model (from [TorchXRayVision](https://github.com/mlmed/torchxrayvision)) that has been **fine-tuned** on a pneumonia dataset. The app is deployed on **Streamlit**, providing an interactive and user-friendly interface.
+This project is a computer vision (CV) application that leverages deep learning to classify chest X-ray images as either normal or indicative of pneumonia. It utilizes a **pretrained DenseNet** model (from [TorchXRayVision](https://github.com/mlmed/torchxrayvision)), fine-tuned on a pneumonia dataset to improve diagnostic accuracy. The application is deployed using **Streamlit**, providing an interactive and user-friendly web interface for real-time medical image analysis.
 
 ## Live App
 
